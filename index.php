@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-
-<html>
-    
-<head>
-    </head>
-
-    <body>
+<?php get_header()?>
 
         <main>
-            zentai site
+            
             </main>
         
         </body>
