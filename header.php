@@ -16,23 +16,6 @@
                </a>
         </div>
         </div>
-
-        <div>
-
-        header
-        <?php
-
-   
-// Vérifier si un menu est affecté à l'emplacement 'b'
-
-affiche_menu('b');
-
-
-
-    ?>
-
-            </div>
-
        
     </header>
 
