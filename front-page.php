@@ -4,7 +4,7 @@
 <div id="primary" class="content-area">
     <main id="main" class="site-main liste_post">
 
-      <div>
+      
         <?php
       
       if(isset($_GET['page']) && !empty($_GET['page'])){
@@ -80,6 +80,6 @@ $args = array(
     <!-- Afficher les commentaires -->
     <?php comments_template(); ?>
 </div>
-</div>
+
 </main>
 <?php get_footer(); ?>

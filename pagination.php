@@ -2,7 +2,6 @@
 <?php
 
 $currentPageUrl = 'http://' . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-echo $currentPageUrl;
 
 $total_pages = $query->max_num_pages;
 if($total >= 2){

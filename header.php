@@ -29,9 +29,14 @@
           </div>
 
           <div class = "div_box">
+            liste_catégorie
+          </div>
+        
+          <div class = "div_box">
             faq
             </div>
 
+        
             <div class = "div_box">
                 BLOG membre
            </div>
@@ -42,8 +47,22 @@
 
              </div>
         </div>
-       
-    </header>
+        
+          </header>
+
+          <div class = "main_header_picture">
+
+          <div>
+        
+          <div>
+          <img src = "https://hikikomori-france.fr/wp-content/uploads/2020/06/headerhiki1opti.jpg" >
+        </div>
+
+        </div>
+
+          </div>
+
+        
 
     <div id="content">
         <!-- Le reste du contenu de la page va ici -->

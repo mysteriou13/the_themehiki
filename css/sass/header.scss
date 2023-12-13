@@ -1,29 +1,48 @@
 header{
 
     background-color: $header_color;
-
     display: flex;
     color: white;
-    width: 93vw;
+    width: $main_width;
     position: relative;
-    left: 3%;
- 
+    left: 5%;
+}
+
+img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.main_header_picture{
+
+    color: white;
+    background-color: red;
+    width: $main_width;
+    position: relative;
+    left: $left_header;
+
 }
 
 #logo{
 
-    width: 19vw;
+    width: 100%;
 
 }
 
 .div_box{
     position: relative;
-    top: 2vh;
+    top: 1vh;
 }
 
 .box_link_header{
-    width: 132vh;
+ 
+    position: relative;
+    left: 46%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
-}
 
+
+}
