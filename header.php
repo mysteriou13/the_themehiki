@@ -11,11 +11,36 @@
     <header>
 
         <div>
+        
         <div id="logo">
             <a  href = "<?php echo home_url()?>">
             <img src = "<?php echo get_site_icon_url() ?>">
                </a>
         </div>
+ 
+        </div>
+
+        <div class = "box_link_header">
+
+        <div class = "div_box">
+
+        PUBS PROJETS DE RECLUS/HIKI
+
+          </div>
+
+          <div class = "div_box">
+            faq
+            </div>
+
+            <div class = "div_box">
+                BLOG membre
+           </div>
+
+           <div class = "div_box">
+            Contact
+            </div>
+
+             </div>
         </div>
        
     </header>

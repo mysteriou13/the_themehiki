@@ -1,4 +1,5 @@
 
+<div id = "main_liste post">
 <?php
 while ($query->have_posts()) : $query->the_post();
         ?>
@@ -7,11 +8,12 @@ while ($query->have_posts()) : $query->the_post();
 
    <?php 
    
-require_once(get_template_directory()."/pagination.php");
+
+   
  
    ?>
 
-        <div>
+        <div id = "liste_article">
             <article id="post-<?php the_ID(); ?>" class="liste_article">
 
                 <div class="entry-content position_text_liste_article">
@@ -20,8 +22,6 @@ require_once(get_template_directory()."/pagination.php");
                         <?php the_title() ?>
                         <?php the_excerpt(); ?>
                     </div>
-
-                </div>
 
                 <div class="footer_liste_article">
 
@@ -51,3 +51,8 @@ require_once(get_template_directory()."/pagination.php");
 
       </div>
         <?php endwhile; ?>
+
+
+        <style>
+            
+            </style>

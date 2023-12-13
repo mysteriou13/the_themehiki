@@ -1,0 +1,29 @@
+header{
+
+    background-color: $header_color;
+
+    display: flex;
+    color: white;
+    width: 93vw;
+    position: relative;
+    left: 3%;
+ 
+}
+
+#logo{
+
+    width: 19vw;
+
+}
+
+.div_box{
+    position: relative;
+    top: 2vh;
+}
+
+.box_link_header{
+    width: 132vh;
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -29,7 +29,7 @@ frontpage
 
 
 // Définir la page à afficher directement
-$my_page = 2;
+$my_page = 1;
 
 // Définir les arguments de la requête
 
