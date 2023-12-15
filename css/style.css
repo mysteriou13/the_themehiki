@@ -38,6 +38,23 @@ aside {
   height: 68vh;
   margin-top: 0%; }
 
+.front_page_liste_post {
+  position: relative;
+  top: 7vh; }
+
+.titre_front_page {
+  color: white;
+  position: relative;
+  top: 9vh;
+  left: 14vw; }
+
+.main_titre_front_page {
+  color: #798DAE;
+  font-family: "Gafata",Sans-serif;
+  font-size: 38px;
+  font-weight: 100;
+  letter-spacing: 7.4px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -46,7 +63,7 @@ html {
   overflow-x: hidden; }
 
 body {
-  background-color: #090a11; }
+  background-color: #171c2c; }
 
 article {
   background-color: #1e243d;

@@ -57,7 +57,23 @@ $args = array(
     <div>
     
     <div>
+    
+    <div class = "titre_front_page">
+
+    <div  class = "main_titre_front_page">
+      Bienvenue sur Hikikomori-France
+   </div>
+
+   <div>
+      Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société 
+   </div>
+    
+    </div>
+
+    <div class = "front_page_liste_post">
     <?php require_once(get_template_directory()."/liste_post.php") ?>
+    </div>
+
   </div>
 
     </div>
@@ -82,4 +98,3 @@ $args = array(
 </div>
 
 </main>
-<?php get_footer(); ?>
