@@ -1,0 +1,51 @@
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.post-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.post-column {
+    width: calc(25% - 20px);
+    /* 25% pour afficher 4 colonnes par ligne avec un espacement de 20px */
+}
+
+.custom-thumbnail {
+
+    border-top-left-radius: 111px;
+border-top-right-radius: 111px;
+ width: 100%;
+ height: 100%;
+
+
+}
+
+.thumbnail-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.title {
+
+    font-family: "Federant", Sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.7em;
+    letter-spacing: .9px;
+}
+
+.titre_post{
+    
+    color: #FF1B1B;
+    font-family: 'Federant', Sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.7em;
+    letter-spacing: .9px;
+}

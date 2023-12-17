@@ -3,6 +3,7 @@
 @import './header.scss';
 @import './aside.scss';
 @import './front_page.scss';
+@import './liste_post.scss';
 
 *{
     margin:0;
@@ -21,8 +22,9 @@ body{
 
 
 
-article{
+.article{
     background-color: $color_post_acceuil;
+    height: 100vh;
     color: white;
 
 }
@@ -68,8 +70,6 @@ main{
     margin-right: 4%;
     border-radius: 111px;
     width: 23vh;
-    height: 69vh;
-
 
 }
 
@@ -82,11 +82,10 @@ main{
 
 .position_text_liste_article{
 
-    width: 70%;
+    width: 100%;
     position: relative;
-    left: 13%;
-    top: 5%;
-
+    left: 1%;
+ 
 }
 
 .box_front_page{

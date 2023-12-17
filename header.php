@@ -3,7 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("./css/style.css")?>">
+    <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("./css/style.css")?>"
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -28,9 +28,19 @@
 
           </div>
 
-          <div class = "div_box">
-            liste_catégorie
-          </div>
+          <div class="div_box">
+    <!-- Liste des catégories -->
+    <select id="categoryDropdown">
+        <?php
+        $categories = get_categories();
+        foreach ($categories as $category) {
+            echo '<option value="' . esc_url(get_category_link($category->term_id)) . '">';
+            echo esc_html($category->name);
+            echo '</option>';
+        }
+        ?>
+    </select>
+</div>
         
           <div class = "div_box">
             faq
@@ -66,3 +76,15 @@
 
     <div id="content">
         <!-- Le reste du contenu de la page va ici -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var categoryDropdown = document.getElementById('categoryDropdown');
+
+    categoryDropdown.addEventListener('change', function () {
+        var selectedValue = this.value;
+        if (selectedValue !== '') {
+            window.location.href = selectedValue;
+        }
+    });
+});
+</script>

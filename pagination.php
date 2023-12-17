@@ -3,12 +3,7 @@
 
 $currentPageUrl = 'http://' . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$total_pages = $query->max_num_pages;
-if($total >= 2){
 
-    $total_pages = $total_pages-1;
-
-}
 ?>
    <div class="pagination" style = "color:white">
      <div class = "box_pagination">
