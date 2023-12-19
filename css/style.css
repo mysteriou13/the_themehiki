@@ -1,4 +1,7 @@
 header {
+  text-transform: uppercase;
+  font-family: 'Pangolin', sans-serif;
+  font-weight: bold;
   background-color: #394c72;
   display: flex;
   color: white;

@@ -3,8 +3,14 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("./css/style.css")?>"
-    <?php wp_head(); ?>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" />
+
+    <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("./css/style.css")?>"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Federant&display=swap" />
+
+
+    
 </head>
 <body <?php body_class(); ?>>
 
@@ -24,8 +30,15 @@
 
         <div class = "div_box">
 
-        PUBS PROJETS DE RECLUS/HIKI
+ <p>
 
+ <ul>
+
+ <a href = "" > PUBS PROJETS DE RECLUS/HIKI</a>
+
+</ul>
+
+</p>
           </div>
 
           <div class="div_box">
@@ -40,19 +53,28 @@
         }
         ?>
     </select>
+
+
 </div>
         
           <div class = "div_box">
-            faq
-            </div>
+   <p>
+          faq
+   </p>
+        </div>
 
         
             <div class = "div_box">
-                BLOG membre
-           </div>
+       <p>
+            BLOG membre
+      </p>       
+            </div>
 
            <div class = "div_box">
-            Contact
+        <p>
+           Contact
+       </p>
+
             </div>
 
              </div>
