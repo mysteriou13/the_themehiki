@@ -41,6 +41,11 @@
 </p>
           </div>
 
+          <div class = "div_box">
+          
+          <div>
+          categories
+          </div>
           <div class="div_box">
     <!-- Liste des catégories -->
     <select id="categoryDropdown">
@@ -53,9 +58,10 @@
         }
         ?>
     </select>
+    
+          </div>
 
-
-</div>
+          </div>
         
           <div class = "div_box">
    <p>
