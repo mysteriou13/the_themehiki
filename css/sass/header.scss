@@ -10,6 +10,34 @@ header{
     position: relative;
     left: 5%;
     height: 9vh;
+    z-index: 1;
+}
+
+.a_header{
+    text-decoration: none;
+
+    &:hover{
+        padding-top: 10px;
+        border-top: 1px solid $color_border;
+    }
+}
+
+.border_header{
+
+    &:hover{
+        border-top: 1px solid $color_border;
+    }
+
+}
+
+#categoryDropdown
+{
+    display: none;
+    z-index: 1;
+    background-color: $header_color;
+    padding-left: 16%;
+    padding-bottom: 10%;
+
 }
 
 
@@ -20,6 +48,7 @@ header{
     width: $main_width;
     position: relative;
     left: $left_header;
+    z-index: -1;
 
 }
 
@@ -31,7 +60,14 @@ header{
 
 .div_box{
     position: relative;
-    top: 1vh;
+    top: 3vh;
+
+}
+
+.div_box_logo{
+    position: relative;
+    top: 2vh;
+    left: 1vw;
 }
 
 .box_link_header{
@@ -41,6 +77,34 @@ header{
     width: 50%;
     display: flex;
     justify-content: space-between;
+}
 
+.div_cat{
 
+ &:hover{
+
+    background-color: $grey;
+    width: 100%;
+
+ }
+ 
+ .link_cat{
+
+    text-decoration: none;
+    
+    &:hover{
+
+    color:$color_border;
+    cursor: pointer;
+
+    }
+ }
+
+}
+
+ #menu_profil {
+
+    display: none;
+    background-color: $color_border;
+ 
 }

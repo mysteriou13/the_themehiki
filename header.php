@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" />
 
-    <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("./css/style.css")?>"/>
+    <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("/css/style.css")?>"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Federant&display=swap" />
 
@@ -15,10 +15,9 @@
 <body <?php body_class(); ?>>
 
     <header>
-
         <div>
         
-        <div id="logo">
+        <div id="logo" class = "div_box_logo">
             <a  href = "<?php echo home_url()?>">
             <img src = "<?php echo get_site_icon_url() ?>">
                </a>
@@ -28,36 +27,41 @@
 
         <div class = "box_link_header">
 
-        <div class = "div_box">
+        <div class = "div_box" >
 
  <p>
 
  <ul>
 
- <a href = "" > PUBS PROJETS DE RECLUS/HIKI</a>
+ <a class = "a_header" href = "" > PUBS PROJETS DE RECLUS/HIKI</a>
 
 </ul>
 
 </p>
           </div>
 
-          <div class = "div_box">
+          <div class = "div_box" style = "width:13%">
           
-          <div>
-          categories
+          <div onclick="menu()" style = "cursor:pointer;">
+          
+          <a id = "titre_catégorie" class = "a_header">categories +</a>
+
           </div>
           <div class="div_box">
     <!-- Liste des catégories -->
-    <select id="categoryDropdown">
+    <div id="categoryDropdown"  style = "width:11vw">
         <?php
         $categories = get_categories();
         foreach ($categories as $category) {
-            echo '<option value="' . esc_url(get_category_link($category->term_id)) . '">';
+            echo '<div class = "div_cat"> 
+            <a  class = "link_cat"  href="'.esc_url(get_category_link($category->term_id)) . '">';
             echo esc_html($category->name);
-            echo '</option>';
+
+            
+            echo '</a></div>';
         }
         ?>
-    </select>
+    </div>
     
           </div>
 
@@ -65,37 +69,65 @@
         
           <div class = "div_box">
    <p>
-          faq
+          <a class = "a_header" href = "/F.A.Q"> F.A.Q </a>
    </p>
         </div>
 
         
             <div class = "div_box">
        <p>
-            BLOG membre
+            <a class = "a_header" href = "/user-blogs"> BLOG membre</a>
+
       </p>       
             </div>
 
            <div class = "div_box">
         <p>
-           Contact
+           
+        <a class = "a_header"  href = "/contact">Contact </a>
+
        </p>
 
             </div>
 
-             </div>
+         
+
+            <div class = "div_box" style = "width:13%">
+          
+          <div onclick="display()" style = "cursor:pointer;">
+          
+          <a id = "titre_catégorie" class = "a_header">mon profil +</a>
+
+          </div>
+
+          <div class="div_box" id = "menu_profil" >
+          <div class = "div_cat">
+
+          <a class = "link_cat" href = "/login"> connection </a>
+
         </div>
-        
+
+           <div class = "div_cat">
+            
+           <a class = "link_cat" href = "/registration"> inscription </a>
+
+           </div>
+
+    
+          </div>
+
+          </div>
+
+          </div>
+
+            
+    </div>
           </header>
 
           <div class = "main_header_picture">
-
+      
           <div>
-        
-          <div>
-          <img src = "https://hikikomori-france.fr/wp-content/uploads/2020/06/headerhiki1opti.jpg" >
-        </div>
-
+          <img  style =  "width:100%"src = "https://hikikomori-france.fr/wp-content/uploads/2020/06/headerhiki1opti.jpg" >
         </div>
 
           </div>
@@ -105,14 +137,42 @@
     <div id="content">
         <!-- Le reste du contenu de la page va ici -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    var categoryDropdown = document.getElementById('categoryDropdown');
 
-    categoryDropdown.addEventListener('change', function () {
-        var selectedValue = this.value;
-        if (selectedValue !== '') {
-            window.location.href = selectedValue;
-        }
-    });
-});
+function display(){
+
+    var div = document.getElementById("menu_profil");
+
+    if(div.style.display === "block"){
+
+        div.style.display = "none";
+
+    }else{
+
+        div.style.display = "block";
+    }
+
+}
+
+function menu(){
+
+     let div = document.getElementById("categoryDropdown");
+
+     let titre = document.getElementById("titre_catégorie");
+
+
+     if(div.style.display == "" || div.style.display == "none"){
+
+     div.style.display = "block";
+
+     titre.innerHTML = "categorie -";
+    
+     }else{
+
+        div.style.display = "";
+        titre.innerHTML = "categorie +";
+
+     }
+
+}
+
 </script>
