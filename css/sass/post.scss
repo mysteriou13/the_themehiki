@@ -1,0 +1,46 @@
+.thumbnail_single{
+    position: relative;
+    left: 60vh;
+    height: 33vh;
+    width: 33vw;
+    object-fit: cover;
+
+}
+
+.main_title_post{
+
+position: relative;
+left: 8vw;
+top: 5vh;
+
+}
+
+.img_thumbnail{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.main_post{
+
+    position: relative;
+    top: 22vh;
+}
+
+.title_post{
+    font-family: 'Pangolin', sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size: 42px;
+}
+
+.link_cat_post{
+    font-family: 'Pangolin', sans-serif;
+    padding: 12px  12px 12px 12px;
+    text-decoration: none;
+    background-color: white;
+    color: rgba(23,28,44,1);
+    position: relative;
+    top: 4vh;
+}

@@ -12,7 +12,8 @@ header {
   z-index: 1; }
 
 .a_header {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
   .a_header:hover {
     padding-top: 10px;
     border-top: 1px solid #232d5a; }
@@ -58,7 +59,8 @@ header {
   background-color: #dddddd;
   width: 100%; }
 .div_cat .link_cat {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
   .div_cat .link_cat:hover {
     color: #232d5a;
     cursor: pointer; }
@@ -131,12 +133,54 @@ aside {
   line-height: 1.7em;
   letter-spacing: .9px; }
 
+.thumbnail_single {
+  position: relative;
+  left: 60vh;
+  height: 33vh;
+  width: 33vw;
+  object-fit: cover; }
+
+.main_title_post {
+  position: relative;
+  left: 8vw;
+  top: 5vh; }
+
+.img_thumbnail {
+  height: 100%;
+  width: 100%; }
+
+.main_post {
+  position: relative;
+  top: 22vh; }
+
+.title_post {
+  font-family: 'Pangolin', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 42px; }
+
+.link_cat_post {
+  font-family: 'Pangolin', sans-serif;
+  padding: 12px  12px 12px 12px;
+  text-decoration: none;
+  background-color: white;
+  color: #171c2c;
+  position: relative;
+  top: 4vh; }
+
+.link_box_pagination {
+  text-decoration: none;
+  color: white; }
+
 * {
   margin: 0;
   padding: 0; }
 
 html {
   overflow-x: hidden; }
+
+a {
+  color: white; }
 
 body {
   background-color: #171c2c; }
@@ -155,12 +199,13 @@ main {
   object-fit: cover; }
 
 .box_pagination {
+  color: white;
   font-size: 1.5em;
   display: flex;
   justify-content: space-around;
   width: 100vw; }
 
-.box_pagination, a {
+.box_pagination {
   color: white; }
 
 .liste_post {

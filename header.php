@@ -118,6 +118,12 @@
 
           </div>
 
+          <div class = "div_box">
+   <p>
+          <a class = "a_header" href = "<?php echo home_url()?>">Acceuil </a>
+   </p>
+        </div>
+
           </div>
 
             

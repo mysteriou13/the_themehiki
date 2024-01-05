@@ -1,39 +1,61 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+    <?php
+    // La boucle WordPress principale
+    while (have_posts()) : the_post();
+    ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <?php
-        // La boucle WordPress principale
-        while (have_posts()) :
+        <div>
 
-            echo '<div class="entry-header">';
+        <div class = "main_title_post">
 
-             the_title('<h2 class="entry-title"><div href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</div></h2>'); 
-        echo '</div>';
+        <div>
 
-            echo "<div>";
-            the_post();
-            echo "</div>";
-        
-        ?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                </div>
-                
-              
+        <div class = "title_post" >
+            <?php the_title()?>
+        </div>
 
-            </article>
-            <div>
-              par <?php  the_author()?> le <?php the_time('j F Y')?>
-           </div>
+        <div>
+                <?php
+                // Récupérer la liste des catégories
+                $categories = get_the_category();
 
-        <?php
-        endwhile;
-        ?>
+                // Vérifier si des catégories existent
+                if ($categories) {
+                    echo '<p class="liste_cat">';
+                    foreach ($categories as $category) {
+                        // Ajouter la classe CSS à chaque lien de catégorie
+                        echo '<a  class = "link_cat_post" href="' . esc_url(get_category_link($category->term_id)) . '" class="ma_classe">' . esc_html($category->name) . '</a>, ';
+                    }
+                    echo '</p>';
+                }
+                ?>
+         </div>
+        </div>
 
-    </main>
+            </div>
+
+            <div class = "main_post">
+
+            <div class="thumbnail_single">
+                <?php the_post_thumbnail('thumbnail', array('class' => 'img_thumbnail')); ?>
+            </div>
+
+            <div class="entry-content">
+                <?php the_content(); ?>
+            </div>
+
+            </div>
+
+        </div>
+
+        </article>
+    <?php
+    endwhile;
+    ?>
 </div>
 
 <?php get_footer(); ?>
+
