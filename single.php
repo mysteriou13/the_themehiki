@@ -47,6 +47,14 @@
                 <?php the_content(); ?>
             </div>
 
+            <div>
+                <?php 
+                
+                    comments_template();
+                
+                ?>
+            </div>
+
             </div>
 
         </div>
@@ -57,5 +65,5 @@
     ?>
 </div>
 
-<?php get_footer(); ?>
+
 
