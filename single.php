@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+
 <div id="primary" class="content-area">
     <?php
     // La boucle WordPress principale
@@ -64,6 +66,7 @@
     endwhile;
     ?>
 </div>
+
 
 
 
