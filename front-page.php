@@ -58,9 +58,18 @@
     </main>
 </div>
 
-<div class="comments-section">
-    <!-- Afficher les commentaires -->
-    <?php comments_template(); ?>
-</div>
+<?php 
+
+get_footer();
+
+?>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var headerElement = document.querySelector('.header');
+
+    // Ajouter une classe pour indiquer que l'animation est terminée
+    headerElement.classList.add('animation_header_finished');
+});
+    </script>

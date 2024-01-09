@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   text-transform: uppercase;
   font-family: 'Pangolin', sans-serif;
@@ -6,13 +7,23 @@ header {
   display: flex;
   color: white;
   width: 88vw;
-  position: relative;
+  position: fixed;
+  top: 0%;
   left: 5%;
   height: 9vh;
   z-index: 1; }
 
+@keyframes customAnimation {
+  100% {
+    width: 55vw;
+    left: 28%; } }
+.header-animation {
+  animation: customAnimation 3s ease-in-out; }
+
+.box_link_header-hidden {
+  display: none; }
+
 .a_header {
-  text-decoration: none;
   color: white; }
   .a_header:hover {
     padding-top: 10px;
@@ -53,7 +64,8 @@ header {
   left: 46%;
   width: 50%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  /* Initiallement, l'élément est transparent */ }
 
 .div_cat:hover {
   background-color: #dddddd;

@@ -7,14 +7,34 @@ header{
     display: flex;
     color: white;
     width: $main_width;
-    position: relative;
+    position: fixed;
+    top:0%;
     left: 5%;
     height: 9vh;
     z-index: 1;
+   
 }
 
+@keyframes customAnimation {
+    
+
+    100% {
+        width: 55vw;
+        left: 28%;
+    }
+
+}
+
+.header-animation {
+    animation: customAnimation 3s ease-in-out ;
+}
+
+.box_link_header-hidden {
+    display: none;
+}
+
+
 .a_header{
-    text-decoration: none;
     color:white;
 
     &:hover{
@@ -71,14 +91,19 @@ header{
     left: 1vw;
 }
 
-.box_link_header{
- 
+.box_link_header {
     position: relative;
     left: 46%;
     width: 50%;
     display: flex;
     justify-content: space-between;
+    
+    /* Initiallement, l'élément est transparent */
+   
 }
+
+
+
 
 .div_cat{
 
@@ -94,6 +119,7 @@ header{
     text-decoration: none;
 
     color:white;
+    
     
     &:hover{
 

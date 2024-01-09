@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-
-
 <div id="primary" class="content-area">
     <?php
     // La boucle WordPress principale
@@ -9,17 +7,13 @@
     ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <div>
+        <div class="main_title_post">
 
-        <div class = "main_title_post">
+            <div class="title_post">
+                <?php the_title()?>
+            </div>
 
-        <div>
-
-        <div class = "title_post" >
-            <?php the_title()?>
-        </div>
-
-        <div>
+            <div class="categories_post">
                 <?php
                 // Récupérer la liste des catégories
                 $categories = get_the_category();
@@ -29,17 +23,16 @@
                     echo '<p class="liste_cat">';
                     foreach ($categories as $category) {
                         // Ajouter la classe CSS à chaque lien de catégorie
-                        echo '<a  class = "link_cat_post" href="' . esc_url(get_category_link($category->term_id)) . '" class="ma_classe">' . esc_html($category->name) . '</a>, ';
+                        echo '<a  class="link_cat_post" href="' . esc_url(get_category_link($category->term_id)) . '" class="ma_classe">' . esc_html($category->name) . '</a>, ';
                     }
                     echo '</p>';
                 }
                 ?>
-         </div>
-        </div>
-
             </div>
 
-            <div class = "main_post">
+        </div>
+
+        <div class="main_post">
 
             <div class="thumbnail_single">
                 <?php the_post_thumbnail('thumbnail', array('class' => 'img_thumbnail')); ?>
@@ -50,23 +43,21 @@
             </div>
 
             <div>
-                <?php 
-                
-                    comments_template();
-                
-                ?>
+                <?php comments_template(); ?>
             </div>
 
+            <div>
+                <?php 
+                get_footer();
+                ?>
             </div>
 
         </div>
 
         </article>
+
+
     <?php
     endwhile;
     ?>
 </div>
-
-
-
-
