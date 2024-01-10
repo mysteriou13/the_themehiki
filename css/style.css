@@ -10,15 +10,17 @@ header {
   position: fixed;
   top: 0%;
   left: 5%;
-  height: 9vh;
+  height: 7vh;
   z-index: 1; }
 
 @keyframes customAnimation {
+  0% {
+    background-color: rgba(0, 0, 0, 0); }
   100% {
-    width: 55vw;
-    left: 28%; } }
+    width: 25vw;
+    left: 40%; } }
 .header-animation {
-  animation: customAnimation 3s ease-in-out; }
+  animation: customAnimation 0.8s ease-in-out; }
 
 .box_link_header-hidden {
   display: none; }
@@ -56,7 +58,7 @@ header {
 
 .div_box_logo {
   position: relative;
-  top: 2vh;
+  top: 1vh;
   left: 1vw; }
 
 .box_link_header {

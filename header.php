@@ -12,7 +12,7 @@
 
     
 </head>
-<body <?php body_class(); ?> onload="animation_header()">
+<body <?php body_class(); ?> >
 
     <header>
         <div>
@@ -210,6 +210,8 @@ var header = document.querySelector("header");
 
 var box_header = document.querySelector(".box_link_header");
 
+var logo = document.querySelector("#logo");
+
 var animationTriggered = false;
 var lastScrollPosition = 0;
 
@@ -224,6 +226,8 @@ header.classList.add("header-hidden");
 // Ajoutez la classe pour masquer la boîte
 box_header.style.display = "none";
 
+logo.style.display = "none";
+
 header.addEventListener("animationend", function(event) {
     // Code à exécuter à la fin de l'animation
     console.log("Fin de l'animation !");
@@ -237,6 +241,7 @@ header.addEventListener("animationend", function(event) {
         header.classList.remove("header-animation", "header-hidden");
         box_header.style.display = "block";
         box_header.style.display = "flex";
+        logo.style.display = "block";
         animationTriggered = true;
     }
 });
