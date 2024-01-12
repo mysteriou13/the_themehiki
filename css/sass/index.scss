@@ -103,6 +103,49 @@ main{
 
 }
 
+
+@keyframes title_site {
+ 
+    0% {
+
+    font-size: 5px;
+    left: 16%;
+        opacity: 0;
+      
+    }
+
+    50%{
+    font-size: 38px;
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+.title_site {
+    color: $color_title;
+    font-family: "Gafata", Sans-serif;
+    font-size: 38px;
+    font-weight: 100;
+    letter-spacing: 7.4px;
+
+    position: relative;
+    left: 0%;
+    transform-origin: center;
+    animation-duration: 3s;
+    animation-name: title_site;
+}
+
+.sous_titre{
+    color: #5F92A8;
+}
+
+.main_title{
+    
+    position: relative;
+    left: 16%;
+
+}
+
 .footer_liste_article{
 
     position: relative;

@@ -30,6 +30,7 @@
          
            ?>
 
+   
 
 <div class="box_front_page">
             <div>
@@ -39,12 +40,29 @@
             <div>
                 <div>
                    
+                     <div>
+                     
+                    </div>
 
-                    <div class="front_page_liste_post" style = "
-                    position: relative;
-                     top: 2vh;
-                    ">
-                        <?php require_once(get_template_directory() . "/liste_post.php") ?>
+                    <div class="front_page_liste_post">
+
+                    <div  class = "main_title" >
+                   
+                   <div class = "title_site">
+                   Bienvenue sur Hikikomori-France
+                      </div>
+
+                      <div class = "sous_titre">
+                      Site regroupant les hikikomori ainsi que les reclus sociaux, les asociaux, tout ceux qui ne s’intègrent pas dans la société
+                      </div>
+
+                    </div>
+
+                   <div>
+                   <?php require_once(get_template_directory() . "/liste_post.php") ?>
+                   </div>
+
+
                     </div>
                 </div>
             </div>
@@ -63,13 +81,3 @@
 get_footer();
 
 ?>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var headerElement = document.querySelector('.header');
-
-    // Ajouter une classe pour indiquer que l'animation est terminée
-    headerElement.classList.add('animation_header_finished');
-});
-    </script>
