@@ -83,12 +83,38 @@ header {
   display: none;
   background-color: #232d5a; }
 
+@keyframes aside {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes ani_text_aside {
+  0% {
+    opacity: 0;
+    left: 0%; }
+  100% {
+    opacity: 1;
+    left: 9%; } }
+.text_aside {
+  animation-name: aside;
+  animation-duration: 6s;
+  position: relative;
+  top: 1%;
+  left: 9%;
+  width: 83%;
+  animation-name: ani_text_aside;
+  animation-duration: 3s; }
+
 aside {
   color: white;
   background-color: #262626;
   width: 18vw;
   height: 100%;
   margin-top: 0%; }
+
+.aside_link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
 
 .front_page_liste_post {
   position: relative;

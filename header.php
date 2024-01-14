@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel ="stylesheet" href ="<?php echo get_theme_file_uri("/css/style.css")?>"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Federant&display=swap" />
@@ -32,27 +34,19 @@
 
         <div class = "div_box" >
 
- <p>
-
- <ul>
-
  <a class = "a_header" href = "" > PUBS PROJETS DE RECLUS/HIKI</a>
 
-</ul>
-
-</p>
           </div>
 
           <div class = "div_box" style = "width:13%">
           
           <div onclick="menu()" style = "cursor:pointer;">
           
+          <div>
           <a id = "titre_catégorie" class = "a_header">categories +</a>
 
-          </div>
-          <div class="div_box">
-    <!-- Liste des catégories -->
-    <div id="categoryDropdown"  style = "width:11vw">
+          
+          <div id="categoryDropdown"  style = "width:11vw">
         <?php
         $categories = get_categories();
         foreach ($categories as $category) {
@@ -64,7 +58,14 @@
             echo '</a></div>';
         }
         ?>
+        </div>
     </div>
+          
+
+          </div>
+          <div class="div_box">
+    <!-- Liste des catégories -->
+   
     
           </div>
 
