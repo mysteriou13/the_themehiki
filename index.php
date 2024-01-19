@@ -83,3 +83,4 @@ $args = array(
 </div>
 </main>
 <?php get_footer(); ?>
+<script type="text/javascript" src="/opt/lampp/htdocs/wordpress/wp-content/themes/zentai-site/js/barre_white.js"></script>

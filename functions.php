@@ -9,6 +9,7 @@ function enqueue_font_awesome() {
     // Enqueue Bootstrap JS
 
 }
+
 add_action('wp_enqueue_scripts', 'enqueue_font_awesome');
 
 ?>

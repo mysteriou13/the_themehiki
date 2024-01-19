@@ -39,12 +39,38 @@
 
             <div>
                 <div>
-                   
+                <ul class="text-light">
+    <?php
+    // Affichez la liste des articles récents avec une classe CSS ajoutée au lien
+    wp_get_archives(array(
+        'type'        => 'postbypost',
+        'limit'       => 5,
+        'format'      => 'custom',
+        'before'      => '<li><a class="votre-classe-css text-white" href="#">', // Ajoutez "text-white" pour que le texte soit blanc
+        'after'       => '</a></li>',
+        'echo'        => 1
+    ));
+    ?>
+</ul>
+
 
                     <div class="front_page_liste_post" style = "
                     position: relative;
                      top: 2vh;
-                    ">
+                    "><ul class="text-light">
+    <?php
+    // Affichez la liste des articles récents avec une classe CSS ajoutée au lien
+    wp_get_archives(array(
+        'type'        => 'postbypost',
+        'limit'       => 5,
+        'format'      => 'custom',
+        'before'      => '<li><a class="votre-classe-css text-white" href="#">', // Ajoutez "text-white" pour que le texte soit blanc
+        'after'       => '</a></li>',
+        'echo'        => 1
+    ));
+    ?>
+</ul>
+
                         <?php require_once(get_template_directory() . "/liste_post.php") ?>
                     </div>
                 </div>
@@ -65,3 +91,9 @@
 </div>
 
 
+<?php 
+
+
+get_footer()
+
+?>
