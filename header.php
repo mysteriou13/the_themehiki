@@ -18,6 +18,7 @@
     <?php 
 
      include_once(get_template_directory()."/js/barre_white.js");  
+     include_once(get_template_directory()."/js/footer.js");  
   
     ?>
 

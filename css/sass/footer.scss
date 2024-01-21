@@ -39,6 +39,75 @@ footer{
     }
 }
 
+.barre_white {
+    opacity: 0;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+
+.block_black {
+    background-color: black;
+    height: 5px;
+    width: 2%;
+    position: relative;
+    left: 0%;
+}
+
+.card_title_cat{
+
+    margin-right: 11%;
+     border: 1px solid red;
+    background-color: #333;
+    height: 17%;
+
+}
+
+.title_categorie{
+
+    font-weight: bold;
+    font-family: 'Pangolin', sans-serif;
+    position: relative;
+    top: 25%;
+    left: 3%;
+    font-size: 1.5em;
+
+}
+
+.footer-section{
+  
+    opacity: 1;
+
+    width: 100%;
+}
+
+.ulfooter{
+
+    opacity: 0;
+
+position: relative;
+top:3%;
+
+}
+
+@keyframes footer_opa {
+    
+    0%{
+        left: -3%;
+        opacity: 0;
+    }
+
+    100%{
+
+        left: 0%;
+        opacity: 1;
+    }
+
+}
+
 @keyframes ani_block {
     0% {
         left: 0%;
@@ -84,21 +153,14 @@ footer{
     }
 }
 
-.barre_white {
-    opacity: 0;
-    background-color: white;
-    height: 2px;
-    width: 100%;
+@keyframes rotation_cat {
+    0% {
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
 }
-
-
-
-
-.block_black {
-    background-color: black;
-    height: 5px;
-    width: 2%;
-    position: relative;
-    left: 0%;
-}
-
