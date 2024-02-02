@@ -6,6 +6,7 @@
 @import './liste_post.scss';
 @import  './post.scss';
 @import './pagination.scss';
+@import './registration.scss';
 @import "./footer.scss";
 *{
     margin:0;
@@ -132,8 +133,8 @@ main{
     position: relative;
     left: 0%;
     transform-origin: center;
-    animation-duration: 3s;
-    animation-name: title_site;
+    //animation-duration: 3s;
+    //animation-name: title_site;
 }
 
 .sous_titre{

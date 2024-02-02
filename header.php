@@ -108,14 +108,11 @@
          
 
             <div class = "div_box" style = "width:13%">
-          
-          <div onclick="display()" style = "cursor:pointer;">
-          
-          <a id = "titre_catégorie" class = "a_header">mon profil +</a>
+        
+          <div>
+          <a id = "titre_catégorie" class = "a_header" onclick = "display()">mon profil +</a>
 
-          </div>
-
-          <div class="div_box" id = "menu_profil" >
+          <div  id = "menu_profil" >
           <div class = "div_cat">
 
           <a class = "link_cat" href = "/login"> connection </a>
@@ -131,6 +128,8 @@
     
           </div>
 
+    </div>
+          
           </div>
 
           <div class = "div_box">
@@ -161,13 +160,17 @@
 
 function display(){
 
+
     var div = document.getElementById("menu_profil");
 
-    if(div.style.display === "block"){
+    if(div.style.display === "none"){
 
-        div.style.display = "none";
+        div.style.display = "block";
 
     }else{
+
+        div.style.display = "none";
+        
 
         div.style.displadocument.addEventListener("DOMContentLoaded", function() {
     // Sélectionnez l'élément .box_link_header
@@ -175,25 +178,7 @@ function display(){
 
     var header = document.querySelector('header');
 
-    // Ajoutez un gestionnaire d'événements pour l'événement de défilement
-    window.addEventListener('scroll', function() {
-        // Obtenez la position de défilement verticale de la page
-        var scrollPosition = window.scrollY;
-
-        // Déterminez à quelle position de défilement vous souhaitez déclencher les modifications
-        var triggerPosition = 200; // Par exemple, 200 pixels à partir du haut de la page
-
-        // Modifiez la classe CSS en fonction de la position de défilement
-        if (scrollPosition > triggerPosition) {
-            // Ajoutez un délai avant d'appliquer la classe 'block'
-
-           
-        } else {
-            // Si la condition n'est pas satisfaite, assurez-vous de réinitialiser l'état de l'élément
-        
-        }
-
-    });
+    
 });
     }
 
