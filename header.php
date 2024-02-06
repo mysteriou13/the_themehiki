@@ -45,7 +45,7 @@
 
         <div class = "div_box" >
 
- <a class = "a_header" href = "" > PUBS PROJETS DE RECLUS/HIKI</a>
+ <a class = "a_header text-decoration-none" href = "" > PUBS PROJETS DE RECLUS/HIKI</a>
 
           </div>
 
@@ -54,7 +54,7 @@
           <div onclick="menu()" style = "cursor:pointer;">
           
           <div>
-          <a id = "titre_catégorie" class = "a_header">categories +</a>
+          <a id = "titre_catégorie" class = "a_header text-decoration-none">categories +</a>
 
           
           <div id="categoryDropdown"  style = "width:11vw">
@@ -84,14 +84,14 @@
         
           <div class = "div_box">
    <p>
-          <a class = "a_header" href = "/F.A.Q"> F.A.Q </a>
+          <a class = "a_header text-decoration-none" href = "/F.A.Q"> F.A.Q </a>
    </p>
         </div>
 
         
             <div class = "div_box">
        <p>
-            <a class = "a_header" href = "/user-blogs"> BLOG membre</a>
+            <a class = "a_header text-decoration-none" href = "/user-blogs"> BLOG membre</a>
 
       </p>       
             </div>
@@ -99,29 +99,29 @@
            <div class = "div_box">
         <p>
            
-        <a class = "a_header"  href = "/contact">Contact </a>
+        <a class = "a_header text-decoration-none"  href = "/contact">Contact </a>
 
        </p>
 
             </div>
 
          
-
+              <?php if (!is_user_logged_in()): ?>
             <div class = "div_box" style = "width:13%">
         
           <div>
-          <a id = "titre_catégorie" class = "a_header" onclick = "display()">mon profil +</a>
+          <a id = "titre_catégorie" class = "a_header text-decoration-none" onclick = "display()">mon profil +</a>
 
           <div  id = "menu_profil" >
           <div class = "div_cat">
 
-          <a class = "link_cat" href = "/login"> connection </a>
+          <a class = "link_cat text-decoration-none" href = "/login"> connection </a>
 
         </div>
 
            <div class = "div_cat">
             
-           <a class = "link_cat" href = "/registration"> inscription </a>
+           <a class = "link_cat text-decoration-none" href = "/registration"> inscription </a>
 
            </div>
 
@@ -131,14 +131,24 @@
     </div>
           
           </div>
+          <?php endif ?>
 
           <div class = "div_box">
    <p>
-          <a class = "a_header" href = "<?php echo home_url()?>">Acceuil </a>
+          <a class = "a_header text-decoration-none" href = "<?php echo home_url()?>">Acceuil </a>
    </p>
         </div>
 
-          </div>
+
+        <?php if (is_user_logged_in()) :?>
+        
+        <div class = "div_box">
+   <p>
+          <a class = "a_header text-decoration-none" href = "<?php echo wp_logout_url(home_url());?>">Deconnection </a>
+   </p>
+        </div>
+        <?php endif ?>
+
 
             
     </div>
