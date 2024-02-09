@@ -82,5 +82,7 @@ $args = array(
 </div>
 </div>
 </main>
-<?php get_footer(); ?>
+<?php
+wp_footer();
+get_footer(); ?>
 <script type="text/javascript" src="/opt/lampp/htdocs/wordpress/wp-content/themes/zentai-site/js/barre_white.js"></script>

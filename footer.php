@@ -1,8 +1,5 @@
-<style>
-    
-</style>
 
-
+<?php wp_footer()?>
 <footer class="text-light bg p-4">
         <div class="footer-section" id = "section_footer_search">
             <!-- Ajoutez ici votre code pour la barre de recherche de WordPress -->
