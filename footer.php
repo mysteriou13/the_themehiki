@@ -75,12 +75,11 @@
         <div>
             <li class = "text-danger">
         <div class = "d-inline-block">    
-        <a href="<?php the_permalink(); ?>" id = "link_post" class="link_post "> <?php the_title(); ?>  </a>
+        <a href="<?php the_permalink(); ?>" id = "link_cat" class="link_post"> <?php the_title(); ?>  </a>
         
        
-        <div  class = "barre_white" id = "barre_white_post"> 
+        <div  class = "barre_white" id = "barre_white_cat">
             <div class = "block_black"> </div>
-        </div>
         </div>
 
         </div>
