@@ -1,5 +1,5 @@
 function  barre_white(link_post,barre_white) {
-    document.addEventListener('DOMContentLoaded', function () {
+    
         const linkPosts = document.querySelectorAll(link_post);
         const blocksBlack = document.querySelectorAll('.block_black');
         const barreWhites = document.querySelectorAll(barre_white);
@@ -28,5 +28,5 @@ function  barre_white(link_post,barre_white) {
 
             });
         });
-    });
+
 }
