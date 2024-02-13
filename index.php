@@ -6,32 +6,8 @@
 
       <div>
         <?php
-      
-      if(isset($_GET['page']) && !empty($_GET['page'])){
+    
 
-      $posts_per_page = htmlspecialchars($_GET['page']);
-
-      }else{
-        $posts_per_page = 1;
-      }
-
-// Définir la page à afficher directement
-$my_page = 2;
-
-// Définir les arguments de la requête
-$args = array(
-    'post_type'      => 'post',
-    'posts_per_page' => $posts_per_page,
-    'paged'          => $my_page
-);
-
-
-// Stocker le nombre total de pages dans une variable
-
-
-        // Exécuter la requête
-        $query = new WP_Query($args);
-        
 
         ?>
 
@@ -85,4 +61,4 @@ $args = array(
 <?php
 wp_footer();
 get_footer(); ?>
-<script type="text/javascript" src="/opt/lampp/htdocs/wordpress/wp-content/themes/zentai-site/js/barre_white.js"></script>
+

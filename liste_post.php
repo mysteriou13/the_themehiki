@@ -1,9 +1,28 @@
 <div id="main_liste_post" class="post-grid">
     <?php
+
+// Définir la page à afficher directement
+$my_page = 0;
+
+// Définir les arguments de la requête
+$args = array(
+    'post_type'      => 'post',
+    'posts_per_page' => '6',
+    'paged'          => $my_page
+);
+
+
+// Stocker le nombre total de pages dans une variable
+
+
+        // Exécuter la requête
+        $query = new WP_Query($args);
+        
+
     $count = 0;
     while ($query->have_posts()) : $query->the_post();
     ?>
-        <?php if ($count % 4 == 0) : ?>
+        <?php if ($count % 5 == 0) : ?>
             <div class="post-row">
         <?php endif; ?>
 
