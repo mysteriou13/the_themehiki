@@ -98,8 +98,8 @@
 
     <script>
     // Appel de la fonction après que le document est prêt
-        barre_white('#link_post', '#barre_white_post');
+        barre_white('#link_post', '#barre_white_post', '.block_black','ani_block');
 
-        barre_white('#link_cat', "#barre_white_cat");
+        barre_white('#link_cat', "#barre_white_cat",'.block_black','ani_block');
 </script>
 

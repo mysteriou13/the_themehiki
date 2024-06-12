@@ -50,9 +50,6 @@ header {
   left: 5%;
   z-index: -1; }
 
-#logo {
-  width: 100%; }
-
 .div_box {
   position: relative;
   top: 3vh; }
@@ -64,8 +61,8 @@ header {
 
 .box_link_header {
   position: relative;
-  left: 46%;
-  width: 50%;
+  left: 0%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   /* Initiallement, l'élément est transparent */ }

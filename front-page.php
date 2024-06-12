@@ -9,7 +9,7 @@
             $category = get_category_by_slug($category_slug);
 
             // Récupérer la page courante
-            $my_page = get_query_var('page') ? absint(get_query_var('page')) : 1;
+            $my_page = 2;
 
             // Définir les arguments de la requête
             $args = array(
@@ -22,7 +22,7 @@
             $query = new WP_Query($args);
 
             // Stocker le nombre total de pages dans une variable
-            $total_pages = $query->max_num_pages;
+            $total_pages = $query->max_num_pages-1;
 
             require_once(get_template_directory() . "/pagination.php");
 

@@ -12,17 +12,22 @@
 <body class = "body">
 
     <header>
-        <div>
-        
+       
+
+        <div class = "box_link_header">
+
         <div id="logo" class = "div_box_logo">
             <a  href = "<?php echo home_url()?>">
             <img src = "<?php echo get_site_icon_url() ?>">
                </a>
         </div>
- 
-        </div>
 
-        <div class = "box_link_header">
+        <div class = "div_box" >
+
+<a class = "a_header text-decoration-none" href = "<?php echo home_url()?>" > Acceuil</a>
+
+         </div>
+
 
         <div class = "div_box" >
 
@@ -30,7 +35,7 @@
 
           </div>
 
-          <div class = "div_box" style = "width:13%">
+          <div class = "div_box">
           
           <div onclick="menu()" style = "cursor:pointer;">
           
@@ -114,11 +119,6 @@
           </div>
           <?php endif ?>
 
-          <div class = "div_box">
-   <p>
-          <a class = "a_header text-decoration-none" href = "<?php echo home_url()?>">Acceuil </a>
-   </p>
-        </div>
 
 
         <?php if (is_user_logged_in()) :?>

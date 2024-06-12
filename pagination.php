@@ -13,6 +13,7 @@ $currentPageUrl = 'http://' . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUES
 
             ?>
 
+            <?php if($total_pages >1): ?>
             <a class = 'link_box_pagination' href = "<?php echo $debut ?>"> debut </a>
 
             <?php 
@@ -28,5 +29,6 @@ $currentPageUrl = 'http://' . $_SERVER['HTTP_HOST'] . parse_url($_SERVER['REQUES
 
             <a class = 'link_box_pagination'  href = "<?php echo $fin;?>"> fin</a>
 
+            <?php endif ?>
         </div>
         </div>
