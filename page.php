@@ -11,7 +11,7 @@ $url_parts = parse_url($current_url);
 $cleaned_path = str_replace('/', '', $url_parts['path']);
 
 
-$tab = ['login','registration','contact'];
+$tab = ['login','registration','contact','my-profile'];
 
 $path = false;
 

@@ -47,6 +47,7 @@
         <?php
         $categories = get_categories();
         foreach ($categories as $category) {
+
             echo '<div class = "div_cat"> 
             <a  class = "link_cat"  href="'.esc_url(get_category_link($category->term_id)) . '">';
             echo esc_html($category->name);
@@ -128,6 +129,13 @@
           <a class = "a_header text-decoration-none" href = "<?php echo wp_logout_url(home_url());?>">Deconnection </a>
    </p>
         </div>
+
+        <div class = "div_box">
+   <p>
+          <a class = "a_header text-decoration-none" href = "/my-profile";?> parametre </a>
+   </p>
+        </div>
+
         <?php endif ?>
 
 
